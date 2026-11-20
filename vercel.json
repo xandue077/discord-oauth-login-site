@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "name": "discord-oauth-login-site",
+  "rewrites": [{ "source": "/(.*)", "destination": "/server.js" }]
+}

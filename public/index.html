@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discord Server Access</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <div class="badge">Discord OAuth</div>
+    <h1>Join the server</h1>
+    <p class="sub">Sign in with your Discord account like normal. No tokens, no automation.</p>
+
+    <div id="notice" class="notice hidden" role="status"></div>
+
+    <form id="loginForm" action="/login" method="get">
+      <label for="invite">Invite code</label>
+      <input id="invite" name="invite" type="text" placeholder="example: U2StyVCrF" autocomplete="off" spellcheck="false">
+      <button type="submit">Log in with Discord</button>
+    </form>
+
+    <p class="fine">You will be sent to Discord to approve access, then returned here.</p>
+  </main>
+</body>
+</html>
